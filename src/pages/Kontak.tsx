@@ -1,29 +1,15 @@
-import { useState } from "react";
+// --- DIUBAH ---
+// Menghapus useState, Input, Textarea, dan useToast karena form dihapus
 import { MapPin, Phone, Mail, MessageCircle, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
 import kontakData from "@/data/kontak.json";
 
 const Kontak = () => {
-  const [formData, setFormData] = useState({
-    nama: "",
-    email: "",
-    subjek: "",
-    pesan: ""
-  });
-  const { toast } = useToast();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Placeholder untuk submit form
-    toast({
-      title: "Pesan Terkirim!",
-      description: "Terima kasih. Kami akan segera menghubungi Anda.",
-    });
-    setFormData({ nama: "", email: "", subjek: "", pesan: "" });
-  };
+  // --- DIHAPUS ---
+  // Menghapus state 'formData' dan hook 'useToast'
+  
+  // --- DIHAPUS ---
+  // Menghapus fungsi 'handleSubmit' untuk form
 
   const handleWhatsApp = () => {
     window.open(`https://wa.me/${kontakData.whatsapp}?text=Halo, saya ingin bertanya tentang UNISMUH Makassar`, '_blank');
@@ -41,9 +27,12 @@ const Kontak = () => {
         </div>
       </section>
 
-      {/* Contact Info & Form */}
+      {/* Contact Info */}
       <section className="py-16 container px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        {/* --- DIUBAH --- */}
+        {/* Layout grid dihapus, diganti 'max-w-2xl' dan 'mx-auto' 
+            agar info kontak berada di tengah setelah form dihapus */}
+        <div className="max-w-2xl mx-auto">
           {/* Informasi Kontak */}
           <div>
             <h2 className="text-3xl font-bold text-foreground mb-6">Informasi Kontak</h2>
@@ -103,71 +92,9 @@ const Kontak = () => {
             </div>
           </div>
 
-          {/* Form Kontak */}
-          <div className="bg-card p-8 rounded-lg shadow-card">
-            <h2 className="text-2xl font-bold text-foreground mb-6">Kirim Pesan</h2>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label htmlFor="nama" className="block text-sm font-medium text-foreground mb-2">
-                  Nama Lengkap
-                </label>
-                <Input
-                  id="nama"
-                  type="text"
-                  value={formData.nama}
-                  onChange={(e) => setFormData({ ...formData, nama: e.target.value })}
-                  required
-                  placeholder="Masukkan nama lengkap"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                  Email
-                </label>
-                <Input
-                  id="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  required
-                  placeholder="nama@email.com"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="subjek" className="block text-sm font-medium text-foreground mb-2">
-                  Subjek
-                </label>
-                <Input
-                  id="subjek"
-                  type="text"
-                  value={formData.subjek}
-                  onChange={(e) => setFormData({ ...formData, subjek: e.target.value })}
-                  required
-                  placeholder="Subjek pesan"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="pesan" className="block text-sm font-medium text-foreground mb-2">
-                  Pesan
-                </label>
-                <Textarea
-                  id="pesan"
-                  value={formData.pesan}
-                  onChange={(e) => setFormData({ ...formData, pesan: e.target.value })}
-                  required
-                  placeholder="Tuliskan pesan Anda..."
-                  rows={5}
-                />
-              </div>
-
-              <Button type="submit" className="w-full" size="lg">
-                Kirim Pesan
-              </Button>
-            </form>
-          </div>
+          {/* --- DIHAPUS --- */}
+          {/* Seluruh div 'Form Kontak' (kolom kedua grid) telah dihapus */}
+          
         </div>
       </section>
 
@@ -177,8 +104,10 @@ const Kontak = () => {
           <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Lokasi Kampus</h2>
           <div className="max-w-4xl mx-auto">
             <div className="aspect-video rounded-lg overflow-hidden shadow-card">
+              {/* --- DIUBAH --- */}
+              {/* src iframe diganti sesuai permintaan Anda */}
               <iframe
-                src={kontakData.maps}
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.038509331228!2d119.43851797401103!3d-5.182761052297386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee25e00e6bdd3%3A0x157c7b6f80d339b2!2sUniversitas%20Muhammadiyah%20Makassar%20(Unismuh%20Makassar)!5e1!3m2!1sid!2sid!4v1763308297238!5m2!1sid!2sid"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

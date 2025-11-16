@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+// --- DIUBAH ---
+// Mengganti 'useLocation' dengan 'NavLink' untuk link aktif
+import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -9,22 +11,30 @@ const menuItems = [
   { name: "Profil Kampus", path: "/profil" },
   { name: "Program Studi", path: "/program-studi" },
   { name: "Alur Pendaftaran", path: "/pendaftaran" },
-  { name: "Fasilitas", path: "/fasilitas" },
+  // --- DIUBAH DI SINI ---
+  { name: "Prestasi", path: "/prestasi" }, // path diubah dari /fasilitas
   { name: "Kontak", path: "/kontak" },
 ];
 
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
+  // --- DIHAPUS ---
+  // const location = useLocation();
+  // const isActive = (path: string) => location.pathname === path;
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
-      <div className="container flex h-16 items-center justify-between px-4">
-        {/* Logo */}
+      <div className="container flex h-20 items-center justify-between px-4">
+        
+        {/* Logo Section */}
         <Link to="/" className="flex items-center space-x-3">
-          <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg">
-            UM
-          </div>
-          <div className="flex flex-col">
+          <img 
+            src="/logo-unismuh.png" 
+            alt="Logo Unismuh" 
+            className="h-12 w-auto object-contain" 
+          />
+          <div className="hidden sm:flex flex-col">
             <span className="text-sm font-bold text-primary leading-tight">UNIVERSITAS</span>
             <span className="text-xs text-muted-foreground leading-tight">MUHAMMADIYAH MAKASSAR</span>
           </div>
@@ -33,20 +43,29 @@ export const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-1">
           {menuItems.map((item) => (
-            <Link
+            // --- DIUBAH: Menggunakan NavLink ---
+            <NavLink
               key={item.path}
               to={item.path}
-              className="px-3 py-2 text-sm font-medium text-foreground/80 hover:text-foreground hover:bg-muted rounded-md transition-colors"
+              // --- DIUBAH: Logika className 'isActive' dari NavLink ---
+              className={({ isActive }) =>
+                cn(
+                  "px-3 py-2 text-sm font-medium rounded-md transition-colors",
+                  isActive
+                    ? "text-primary font-bold bg-primary/10" // Style jika aktif
+                    : "text-foreground/80 hover:text-foreground hover:bg-muted" // Style default
+                )
+              }
             >
               {item.name}
-            </Link>
+            </NavLink>
           ))}
         </nav>
 
         {/* CTA Button Desktop */}
         <div className="hidden md:block">
           <Link to="/pendaftaran">
-            <Button variant="default" className="bg-secondary hover:bg-secondary/90">
+            <Button variant="default" className="bg-secondary hover:bg-secondary/90 text-white">
               Daftar Sekarang
             </Button>
           </Link>
@@ -70,17 +89,26 @@ export const Header = () => {
       >
         <nav className="container px-4 py-4 flex flex-col space-y-2">
           {menuItems.map((item) => (
-            <Link
+            // --- DIUBAH: Menggunakan NavLink ---
+            <NavLink
               key={item.path}
               to={item.path}
-              className="px-3 py-2 text-sm font-medium text-foreground/80 hover:text-foreground hover:bg-muted rounded-md transition-colors"
+              // --- DIUBAH: Logika className 'isActive' dari NavLink ---
+              className={({ isActive }) =>
+                cn(
+                  "px-3 py-2 text-sm font-medium rounded-md transition-colors",
+                  isActive
+                    ? "text-primary font-bold bg-primary/10"
+                    : "text-foreground/80 hover:text-foreground hover:bg-muted"
+                )
+              }
               onClick={() => setMobileMenuOpen(false)}
             >
               {item.name}
-            </Link>
+            </NavLink>
           ))}
           <Link to="/pendaftaran" onClick={() => setMobileMenuOpen(false)}>
-            <Button variant="default" className="w-full bg-secondary hover:bg-secondary/90">
+            <Button variant="default" className="w-full mt-2 bg-secondary hover:bg-secondary/90 text-white">
               Daftar Sekarang
             </Button>
           </Link>

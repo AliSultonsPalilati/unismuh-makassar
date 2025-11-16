@@ -37,7 +37,10 @@ export const Footer = () => {
               <li><Link to="/profil" className="hover:text-secondary transition-colors">Profil Kampus</Link></li>
               <li><Link to="/program-studi" className="hover:text-secondary transition-colors">Program Studi</Link></li>
               <li><Link to="/pendaftaran" className="hover:text-secondary transition-colors">Alur Pendaftaran</Link></li>
-              <li><Link to="/fasilitas" className="hover:text-secondary transition-colors">Fasilitas</Link></li>
+              
+              {/* --- DIUBAH DI SINI --- */}
+              <li><Link to="/prestasi" className="hover:text-secondary transition-colors">Prestasi</Link></li>
+              
               <li><Link to="/kontak" className="hover:text-secondary transition-colors">Kontak</Link></li>
             </ul>
           </div>

@@ -1,69 +1,114 @@
 [
   {
-    "id": "fkip",
-    "nama": "Fakultas Keguruan dan Ilmu Pendidikan",
-    "deskripsi": "Mencetak pendidik profesional yang berakhlak mulia dan berdaya saing tinggi.",
-    "akreditasi": "B",
+    "id": 1,
+    "nama": "Fakultas Agama Islam",
+    "akreditasi": "Unggul",
+    "deskripsi": "Membentuk sarjana yang menguasai ilmu keislaman, berwawasan luas, dan berakhlak mulia.",
     "prodi": [
-      "Pendidikan Bahasa Indonesia",
-      "Pendidikan Bahasa Inggris",
-      "Pendidikan Matematika",
-      "Pendidikan Guru Sekolah Dasar (PGSD)"
+      "S1 Pendidikan Agama Islam",
+      "S1 Hukum Ekonomi Syariah (HES)",
+      "S1 Komunikasi dan Penyiaran Islam (KPI)",
+      "S1 Pendidikan Bahasa Arab",
+      "S1 Bimbingan dan Penyuluhan Islam (BPI)",
+      "S2 Pendidikan Agama Islam",
+      "S3 Pendidikan Agama Islam"
     ]
   },
   {
-    "id": "teknik",
-    "nama": "Fakultas Teknik",
-    "deskripsi": "Menghasilkan lulusan teknik yang inovatif dan siap menghadapi tantangan industri modern.",
-    "akreditasi": "B",
-    "prodi": [
-      "Teknik Sipil",
-      "Teknik Arsitektur",
-      "Teknik Mesin",
-      "Teknik Elektro"
-    ]
-  },
-  {
-    "id": "ekonomi",
+    "id": 2,
     "nama": "Fakultas Ekonomi dan Bisnis",
-    "deskripsi": "Membentuk wirausahawan dan profesional bisnis yang berintegritas tinggi.",
-    "akreditasi": "A",
+    "akreditasi": "Unggul",
+    "deskripsi": "Menghasilkan profesional di bidang ekonomi, manajemen, dan akuntansi yang berdaya saing global.",
     "prodi": [
-      "Manajemen",
-      "Akuntansi",
-      "Ekonomi Pembangunan"
+      "S1 Manajemen",
+      "S1 Akuntansi",
+      "S1 Ekonomi Pembangunan",
+      "S1 Ekonomi Islam",
+      "D3 Perpajakan",
+      "S2 Manajemen",
+      "Profesi Akuntan (PPAk)"
     ]
   },
   {
-    "id": "kesehatan",
-    "nama": "Fakultas Ilmu Kesehatan",
-    "deskripsi": "Menghasilkan tenaga kesehatan profesional yang berkomitmen pada pelayanan masyarakat.",
-    "akreditasi": "B",
+    "id": 3,
+    "nama": "Fakultas Ilmu Sosial dan Ilmu Politik",
+    "akreditasi": "Baik Sekali",
+    "deskripsi": "Mencetak lulusan yang kritis, analitis, dan solutif terhadap fenomena sosial dan politik.",
     "prodi": [
-      "Keperawatan",
-      "Kesehatan Masyarakat",
-      "Farmasi",
-      "Kebidanan"
+      "S1 Ilmu Administrasi Negara",
+      "S1 Ilmu Pemerintahan",
+      "S1 Sosiologi",
+      "S1 Ilmu Komunikasi"
     ]
   },
   {
-    "id": "pertanian",
+    "id": 4,
+    "nama": "Fakultas Kedokteran dan Ilmu Kesehatan",
+    "akreditasi": "Baik Sekali",
+    "deskripsi": "Menyelenggarakan pendidikan kedokteran dan kesehatan yang Islami dan berkualitas.",
+    "prodi": [
+      "S1 Pendidikan Dokter",
+      "S1 Kebidanan",
+      "D3 Kebidanan",
+      "Profesi Dokter",
+      "Profesi Bidan"
+    ]
+  },
+  {
+    "id": 5,
+    "nama": "Fakultas Keguruan dan Ilmu Pendidikan",
+    "akreditasi": "Unggul",
+    "deskripsi": "Menyiapkan tenaga pendidik profesional yang inovatif dan berkarakter.",
+    "prodi": [
+      "S1 Pendidikan Bahasa dan Sastra Indonesia",
+      "S1 Pendidikan Bahasa Inggris",
+      "S1 Pendidikan Matematika",
+      "S1 Pendidikan Sosiologi",
+      "S1 Pendidikan Pancasila dan Kewarganegaraan (PPKn)",
+      "S1 Pendidikan Guru Sekolah Dasar (PGSD)",
+      "S1 Pendidikan Guru PAUD (PG-PAUD)",
+      "S1 Pendidikan Seni Rupa",
+      "S1 Pendidikan Fisika",
+      "S1 Teknologi Pendidikan",
+      "S2 Pendidikan Bahasa dan Sastra Indonesia",
+      "S2 Pendidikan Bahasa Inggris",
+      "S2 Pendidikan Dasar",
+      "Profesi Guru (PPG)"
+    ]
+  },
+  {
+    "id": 6,
     "nama": "Fakultas Pertanian",
-    "deskripsi": "Mengembangkan ilmu pertanian modern untuk ketahanan pangan bangsa.",
-    "akreditasi": "B",
+    "akreditasi": "Baik Sekali",
+    "deskripsi": "Mengembangkan sumber daya manusia yang unggul dalam bidang agribisnis dan teknologi pertanian.",
     "prodi": [
-      "Agroteknologi",
-      "Agribisnis",
-      "Peternakan"
+      "S1 Agribisnis",
+      "S1 Agroteknologi",
+      "S1 Budidaya Perairan",
+      "S1 Kehutanan",
+      "S2 Agribisnis"
     ]
   },
   {
-    "id": "hukum",
-    "nama": "Fakultas Hukum",
-    "deskripsi": "Mencetak sarjana hukum yang berintegritas dan berwawasan keislaman.",
-    "akreditasi": "B",
+    "id": 7,
+    "nama": "Fakultas Teknik",
+    "akreditasi": "Unggul",
+    "deskripsi": "Menghasilkan insinyur yang kompeten, kreatif, dan inovatif di bidang rekayasa dan teknologi.",
     "prodi": [
-      "Ilmu Hukum"
+      "S1 Teknik Informatika",
+      "S1 Teknik Sipil",
+      "S1 Teknik Elektro",
+      "S1 Arsitektur",
+      "S1 Perencanaan Wilayah & Kota (PWK)"
+    ]
+  },
+  {
+    "id": 8,
+    "nama": "Fakultas Hukum",
+    "akreditasi": "Baik Sekali",
+    "deskripsi": "Mencetak praktisi dan akademisi hukum yang profesional, adil, dan berintegritas.",
+    "prodi": [
+      "S1 Ilmu Hukum"
     ]
   }
 ]

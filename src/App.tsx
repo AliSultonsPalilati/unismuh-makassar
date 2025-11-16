@@ -3,13 +3,21 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// --- 1. Impor ScrollToTop ---
+// (Saya asumsikan Anda menyimpannya di src/components/ScrollToTop.tsx)
+import ScrollToTop from "./components/ScrollToTop";
+
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import Beranda from "./pages/Beranda";
 import ProfilKampus from "./pages/ProfilKampus";
 import ProgramStudi from "./pages/ProgramStudi";
 import Pendaftaran from "./pages/Pendaftaran";
-import Fasilitas from "./pages/Fasilitas";
+
+// --- 2. Ganti nama impor agar konsisten ---
+import Prestasi from "./pages/Prestasi"; // Nama impor diubah dari 'Fasilitas'
+
 import Kontak from "./pages/Kontak";
 import NotFound from "./pages/NotFound";
 
@@ -21,6 +29,11 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        
+        {/* --- 3. Tambahkan ScrollToTop di sini --- */}
+        {/* Ini akan memperbaiki masalah scroll Anda */}
+        <ScrollToTop />
+        
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-1">
@@ -29,7 +42,10 @@ const App = () => (
               <Route path="/profil" element={<ProfilKampus />} />
               <Route path="/program-studi" element={<ProgramStudi />} />
               <Route path="/pendaftaran" element={<Pendaftaran />} />
-              <Route path="/fasilitas" element={<Fasilitas />} />
+              
+              {/* --- 4. Ganti path dan elemen di sini --- */}
+              <Route path="/prestasi" element={<Prestasi />} /> 
+              
               <Route path="/kontak" element={<Kontak />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />

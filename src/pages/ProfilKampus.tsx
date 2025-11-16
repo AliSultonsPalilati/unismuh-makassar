@@ -18,22 +18,45 @@ const ProfilKampus = () => {
 
       {/* Sejarah */}
       <section className="py-16 container px-4">
-        <h2 className="text-3xl font-bold text-foreground mb-6">Sejarah Singkat</h2>
-        <div className="prose prose-lg max-w-none text-foreground/80">
-          <p className="mb-4">
-            Universitas Muhammadiyah Makassar (UNISMUH Makassar) didirikan pada tahun 1963 oleh Pimpinan Daerah Muhammadiyah Sulawesi Selatan sebagai wujud komitmen organisasi dalam mencerdaskan kehidupan bangsa melalui pendidikan tinggi yang Islami.
-          </p>
-          <p className="mb-4">
-            Sejak awal berdirinya, UNISMUH Makassar telah berkembang menjadi salah satu perguruan tinggi terkemuka di Indonesia Timur. Berawal dari beberapa fakultas, kini telah berkembang menjadi universitas yang memiliki 8 fakultas dengan 35 program studi yang tersebar dari jenjang Diploma hingga Doktor.
-          </p>
-          <p className="mb-4">
-            Dalam perjalanannya, UNISMUH Makassar terus berkomitmen untuk menghasilkan lulusan yang tidak hanya unggul secara akademik, tetapi juga berakhlak mulia sesuai dengan nilai-nilai Islam dan kemuhammadiyahan. Kampus ini telah meluluskan ribuan alumni yang kini berkontribusi di berbagai sektor pembangunan nasional.
-          </p>
-          <p>
-            Terakreditasi B oleh BAN-PT, UNISMUH Makassar terus melakukan peningkatan mutu pendidikan melalui pengembangan kurikulum berbasis kompetensi, peningkatan kualitas dosen, dan pengembangan infrastruktur kampus yang modern.
-          </p>
-        </div>
-      </section>
+  <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
+    Sejarah Singkat Universitas Muhammadiyah Makassar
+  </h2>
+
+  <div className="prose prose-lg max-w-none text-foreground/80 leading-relaxed space-y-6">
+    <p>
+      Universitas Muhammadiyah Makassar (UNISMUH Makassar) didirikan pada tahun 
+      <strong> 1963 </strong> oleh Pimpinan Daerah Muhammadiyah Sulawesi Selatan 
+      sebagai wujud komitmen organisasi dalam mencerdaskan kehidupan bangsa melalui 
+      pendidikan tinggi yang berlandaskan nilai-nilai Islam.
+    </p>
+
+    <p>
+      Sejak berdiri, UNISMUH Makassar berkembang pesat menjadi salah satu perguruan 
+      tinggi terkemuka di kawasan Indonesia Timur. Berawal hanya dari beberapa fakultas, 
+      kini telah berkembang menjadi universitas besar dengan 
+      <strong> 8 fakultas dan lebih dari 50 program studi </strong> mulai dari 
+      jenjang Diploma, Sarjana, Magister, hingga Doktor.
+    </p>
+
+    <p>
+      Dalam perjalanannya, UNISMUH Makassar terus berkomitmen mencetak lulusan 
+      yang tidak hanya unggul secara akademik, tetapi juga berakhlak mulia dan mampu 
+      mengimplementasikan nilai-nilai Islam serta Kemuhammadiyahan dalam kehidupan 
+      bermasyarakat. Ribuan alumni UNISMUH kini berkontribusi di berbagai sektor 
+      pembangunan nasional.
+    </p>
+
+    <p>
+      Pada tahun <strong>2024</strong>, UNISMUH Makassar resmi meraih 
+      <strong> Akreditasi Institusi “Unggul” dari BAN-PT </strong>, yang menegaskan 
+      kualitasnya sebagai lembaga pendidikan tinggi berdaya saing nasional. 
+      Peningkatan mutu terus dilakukan melalui pengembangan kurikulum berbasis kompetensi, 
+      peningkatan kualitas dosen, serta pembangunan fasilitas dan infrastruktur kampus 
+      modern yang mendukung proses pembelajaran.
+    </p>
+  </div>
+</section>
+
 
       {/* Visi Misi */}
       <section className="py-16 bg-muted/30">
@@ -112,39 +135,49 @@ const ProfilKampus = () => {
         </div>
       </section>
 
-      {/* Struktur Pimpinan */}
+      {/* Struktur Pimpinan (SESUAI GAMBAR TERBARU) */}
       <section className="py-16 bg-muted/30">
         <div className="container px-4">
           <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Struktur Pimpinan</h2>
+          {/* Menggunakan grid 4 kolom untuk Rektorat */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            {/* Pimpinan 1: Rektor */}
             <div className="bg-card p-6 rounded-lg shadow-card text-center">
               <div className="w-24 h-24 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <Users className="text-primary" size={40} />
               </div>
-              <h3 className="font-bold text-lg mb-1">Prof. Dr. H. Abdul Rahman Rahim, SE., MM</h3>
+              <h3 className="font-bold text-lg mb-1">Dr. Ir. H. Abd. Rakhim Nanda, S.T., M.T., IPU.</h3>
               <p className="text-sm text-muted-foreground">Rektor</p>
             </div>
+            
+            {/* Pimpinan 2: Plt. WR I */}
             <div className="bg-card p-6 rounded-lg shadow-card text-center">
               <div className="w-24 h-24 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <Users className="text-primary" size={40} />
               </div>
-              <h3 className="font-bold text-lg mb-1">Dr. H. Muhammad Arsyad, M.Pd</h3>
-              <p className="text-sm text-muted-foreground">Wakil Rektor I Bidang Akademik</p>
+              <h3 className="font-bold text-lg mb-1">Dr. Burhanuddin, S.Sos., M.Si.</h3>
+              <p className="text-sm text-muted-foreground">Plt. Wakil Rektor I</p>
             </div>
+            
+            {/* Pimpinan 3: WR II */}
             <div className="bg-card p-6 rounded-lg shadow-card text-center">
               <div className="w-24 h-24 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <Users className="text-primary" size={40} />
               </div>
-              <h3 className="font-bold text-lg mb-1">Dr. Ir. Andi Sadapotto, M.Si</h3>
-              <p className="text-sm text-muted-foreground">Wakil Rektor II Bidang Umum</p>
+              <h3 className="font-bold text-lg mb-1">Prof. Dr. Andi Sukri Syamsuri, M.Hum.</h3>
+              <p className="text-sm text-muted-foreground">Wakil Rektor II</p>
             </div>
+            
+            {/* Pimpinan 4: Plt. WR III & IV */}
             <div className="bg-card p-6 rounded-lg shadow-card text-center">
               <div className="w-24 h-24 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <Users className="text-primary" size={40} />
               </div>
-              <h3 className="font-bold text-lg mb-1">Dr. H. Burhanuddin Badulu, SE., M.Si</h3>
-              <p className="text-sm text-muted-foreground">Wakil Rektor III Bidang Kemahasiswaan</p>
+              <h3 className="font-bold text-lg mb-1">Dr. H. Mawardi Pewangi, M.Pd.I.</h3>
+              <p className="text-sm text-muted-foreground">Plt. Wakil Rektor III & IV</p>
             </div>
+
           </div>
         </div>
       </section>
@@ -155,25 +188,29 @@ const ProfilKampus = () => {
         <div className="max-w-3xl mx-auto">
           <div className="bg-card p-8 rounded-lg shadow-card">
             <ul className="space-y-4">
+              
               <li className="flex items-start">
                 <Award className="text-primary mr-3 mt-1 flex-shrink-0" size={24} />
                 <div>
-                  <strong className="text-foreground">Akreditasi Institusi B</strong>
-                  <p className="text-sm text-muted-foreground">Terakreditasi oleh BAN-PT dengan peringkat B</p>
+                  <strong className="text-foreground">Akreditasi Institusi Unggul</strong>
+                  <p className="text-sm text-muted-foreground">
+                    Resmi meraih Akreditasi "Unggul" berdasarkan SK BAN-PT No: 31/SK/BAN-PT/Ak/PT/I/2024.
+                  </p>
                 </div>
               </li>
+
               <li className="flex items-start">
                 <Award className="text-primary mr-3 mt-1 flex-shrink-0" size={24} />
                 <div>
                   <strong className="text-foreground">Program Studi Terakreditasi</strong>
-                  <p className="text-sm text-muted-foreground">Memiliki program studi dengan akreditasi A dan B dari BAN-PT</p>
+                  <p className="text-sm text-muted-foreground">Sebagian besar program studi telah terakreditasi Unggul, A, dan B dari BAN-PT dan LAM</p>
                 </div>
               </li>
               <li className="flex items-start">
                 <Award className="text-primary mr-3 mt-1 flex-shrink-0" size={24} />
                 <div>
                   <strong className="text-foreground">Kampus Terbaik Sulsel</strong>
-                  <p className="text-sm text-muted-foreground">Salah satu perguruan tinggi swasta terbaik di Sulawesi Selatan</p>
+                  <p className="text-sm text-muted-foreground">Salah satu perguruan tinggi swasta terbaik di Sulawesi Selatan versi berbagai lembaga pemeringkatan</p>
                 </div>
               </li>
               <li className="flex items-start">
@@ -182,6 +219,8 @@ const ProfilKampus = () => {
                   <strong className="text-foreground">Prestasi Mahasiswa</strong>
                   <p className="text-sm text-muted-foreground">Berbagai prestasi di tingkat regional dan nasional dalam bidang akademik dan non-akademik</p>
                 </div>
+              {/* --- KESALAHAN ADA DI SINI --- */}
+              {/* Tag '</div>' ekstra telah dihapus dari sini */}
               </li>
             </ul>
           </div>

@@ -1,0 +1,93 @@
+[
+  {
+    "tahun": 2025,
+    "prestasi": [
+      {
+        "id": 1,
+        "kategori": "Institusi",
+        "judul": "Pengukuhan 3 Guru Besar Baru",
+        "deskripsi": "Unismuh Makassar mengukuhkan tiga guru besar baru di awal tahun 2025, memperkuat jajaran akademik universitas."
+      },
+      {
+        "id": 2,
+        "kategori": "Akademik",
+        "judul": "Prodi S2 PAI FAI Raih Akreditasi Unggul",
+        "deskripsi": "Program Studi Magister (S2) Pendidikan Agama Islam (PAI) Fakultas Agama Islam (FAI) Unismuh resmi meraih akreditasi Unggul dari LAMDIK."
+      }
+    ]
+  },
+  {
+    "tahun": 2024,
+    "prestasi": [
+      {
+        "id": 1,
+        "kategori": "Institusi",
+        "judul": "Meraih Akreditasi Institusi UNGGUL",
+        "deskripsi": "Unismuh Makassar secara resmi meraih Akreditasi Institusi Peringkat UNGGUL dari Badan Akreditasi Nasional Perguruan Tinggi (BAN-PT)."
+      },
+      {
+        "id": 2,
+        "kategori": "Mahasiswa",
+        "judul": "Juara 1 Lomba Business Plan Nasional",
+        "deskripsi": "Mahasiswa dari Fakultas Ekonomi dan Bisnis (FEB) berhasil meraih Juara 1 dalam kompetisi Business Plan tingkat nasional."
+      }
+    ]
+  },
+  {
+    "tahun": 2023,
+    "prestasi": [
+      {
+        "id": 1,
+        "kategori": "Pemeringkatan",
+        "judul": "Peringkat 1 PTS se-Sulawesi (UniRank)",
+        "deskripsi": "Unismuh Makassar dinobatkan sebagai Perguruan Tinggi Swasta (PTS) terbaik nomor 1 di Sulawesi Selatan versi 4ICU UniRank 2023."
+      },
+      {
+        "id": 2,
+        "kategori": "Mahasiswa",
+        "judul": "Juara 1 Debat Nasional PIMNAS",
+        "deskripsi": "Tim mahasiswa Unismuh berhasil meraih Juara 1 pada Lomba Debat Nasional yang merupakan bagian dari Pekan Ilmiah Mahasiswa Nasional (PIMNAS)."
+      },
+      {
+        "id": 3,
+        "kategori": "Dosen",
+        "judul": "Dosen FKIP Raih Hibah Penelitian Kemdikbud",
+        "deskripsi": "Salah satu dosen dari FKIP Unismuh berhasil mendapatkan Hibah Penelitian bergengsi dari Kemdikbudristek."
+      }
+    ]
+  },
+  {
+    "tahun": 2022,
+    "prestasi": [
+      {
+        "id": 1,
+        "kategori": "Institusi",
+        "judul": "Borong Penghargaan LLDIKTI Wilayah IX",
+        "deskripsi": "Unismuh Makassar memborong berbagai penghargaan dalam ajang LLDIKTI Wilayah IX Award 2022, termasuk kategori Pelaporan Kerjasama Terbaik."
+      },
+      {
+        "id": 2,
+        "kategori": "Mahasiswa",
+        "judul": "Juara 2 Kontes Robot Indonesia (KRI)",
+        "deskripsi": "Tim robotik dari Fakultas Teknik Unismuh meraih Juara 2 pada Kontes Robot Indonesia (KRI) untuk Wilayah V."
+      }
+    ]
+  },
+  {
+    "tahun": 2021,
+    "prestasi": [
+      {
+        "id": 1,
+        "kategori": "Pemeringkatan",
+        "judul": "Top 100 Universitas (Webometrics)",
+        "deskripsi": "Unismuh Makassar berhasil masuk dalam 100 besar universitas terbaik di Indonesia versi Webometrics edisi Juli 2021."
+      },
+      {
+        "id": 2,
+        "kategori": "Mahasiswa",
+        "judul": "Tim PKM Lolos Pendanaan Kemdikbud",
+        "deskripsi": "Sejumlah tim Program Kreativitas Mahasiswa (PKM) Unismuh berhasil lolos untuk mendapatkan pendanaan dari Kemdikbud."
+      }
+    ]
+  }
+]

@@ -1,73 +1,175 @@
-# Welcome to your Lovable project
+# Website Universitas Muhammadiyah Makassar
 
-## Project info
+Website informasi dan pengenalan kampus untuk Universitas Muhammadiyah Makassar. Dibangun dengan React, TypeScript, dan Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/c68e2f13-5de6-4094-add3-79118ded9d01
+## 🎓 Fitur Utama
 
-## How can I edit this code?
+- **6 Halaman Utama**: Beranda, Profil Kampus, Program Studi, Alur Pendaftaran, Fasilitas, dan Kontak
+- **Desain Responsif**: Optimal di mobile, tablet, dan desktop
+- **Navigasi Intuitif**: Header sticky dengan menu hamburger untuk mobile
+- **SEO Optimized**: Meta tags lengkap untuk setiap halaman
+- **Modern UI**: Design system dengan color palette akademik Islami (biru tua, hijau, dan aksen emas)
 
-There are several ways of editing your application.
+## 🚀 Cara Menjalankan
 
-**Use Lovable**
+### Prasyarat
+- Node.js versi 16 atau lebih tinggi
+- npm atau yarn
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c68e2f13-5de6-4094-add3-79118ded9d01) and start prompting.
+### Instalasi
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Clone repository ini
+```bash
+git clone <repository-url>
+cd <project-folder>
+```
 
-**Use your preferred IDE**
+2. Install dependencies
+```bash
+npm install
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Jalankan development server
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Buka browser dan akses `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build untuk Production
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+File hasil build akan tersimpan di folder `dist/`.
 
-## What technologies are used for this project?
+## 📁 Struktur Project
 
-This project is built with:
+```
+src/
+├── assets/              # Gambar dan asset statis
+│   ├── hero-campus.jpg
+│   ├── library.jpg
+│   ├── laboratory.jpg
+│   └── mosque.jpg
+├── components/          # Komponen reusable
+│   ├── Header.tsx
+│   ├── Footer.tsx
+│   ├── StatCard.tsx
+│   └── FeatureCard.tsx
+├── data/               # File JSON untuk konten
+│   ├── fakultas.json
+│   ├── statistik.json
+│   ├── fasilitas.json
+│   └── kontak.json
+├── pages/              # Halaman utama
+│   ├── Beranda.tsx
+│   ├── ProfilKampus.tsx
+│   ├── ProgramStudi.tsx
+│   ├── Pendaftaran.tsx
+│   ├── Fasilitas.tsx
+│   └── Kontak.tsx
+└── App.tsx             # Root component dengan routing
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🎨 Kustomisasi
 
-## How can I deploy this project?
+### Mengganti Gambar
 
-Simply open [Lovable](https://lovable.dev/projects/c68e2f13-5de6-4094-add3-79118ded9d01) and click on Share -> Publish.
+Gambar kampus tersimpan di folder `src/assets/`. Untuk mengganti:
 
-## Can I connect a custom domain to my Lovable project?
+1. Tambahkan gambar baru ke folder `src/assets/`
+2. Import gambar di file komponen yang relevan
+```typescript
+import gambarBaru from "@/assets/gambar-baru.jpg";
+```
+3. Gunakan dalam komponen
 
-Yes, you can!
+### Mengubah Data Konten
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Semua konten dinamis tersimpan dalam file JSON di folder `src/data/`:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- **fakultas.json**: Data fakultas dan program studi
+- **statistik.json**: Statistik kampus (jumlah fakultas, mahasiswa, dll)
+- **fasilitas.json**: Daftar fasilitas kampus
+- **kontak.json**: Informasi kontak, alamat, dan social media
+
+Edit file-file ini untuk mengubah konten tanpa perlu mengubah kode.
+
+### Mengubah Warna Theme
+
+Theme warna didefinisikan di `src/index.css` dalam variabel CSS. Edit nilai HSL untuk mengubah warna:
+
+```css
+:root {
+  --primary: 220 80% 25%;      /* Warna utama (biru tua) */
+  --secondary: 38 95% 50%;     /* Warna aksen (emas) */
+  --accent: 165 70% 40%;       /* Warna aksen tambahan (hijau) */
+  /* ... */
+}
+```
+
+## 📱 Halaman
+
+### 1. Beranda (/)
+- Hero banner dengan tagline kampus
+- Statistik kampus (fakultas, mahasiswa, akreditasi)
+- Program dan fasilitas unggulan
+- Call-to-action untuk pendaftaran
+
+### 2. Profil Kampus (/profil)
+- Sejarah singkat universitas
+- Visi, misi, dan nilai-nilai
+- Struktur pimpinan
+- Akreditasi dan prestasi
+
+### 3. Program Studi (/program-studi)
+- Daftar fakultas dengan program studinya
+- Badge akreditasi untuk setiap fakultas
+- Keunggulan program studi
+
+### 4. Alur Pendaftaran (/pendaftaran)
+- Step-by-step proses pendaftaran (6 langkah)
+- Dokumen yang diperlukan
+- Timeline pendaftaran
+- CTA untuk daftar online
+
+### 5. Fasilitas (/fasilitas)
+- Galeri fasilitas kampus dengan foto
+- Deskripsi lengkap setiap fasilitas
+- Fasilitas pendukung lainnya
+
+### 6. Kontak (/kontak)
+- Informasi kontak lengkap
+- Form kontak interaktif
+- Tombol WhatsApp
+- Google Maps embed
+- Link social media
+
+## 🛠️ Teknologi
+
+- **React 18** - UI Framework
+- **TypeScript** - Type Safety
+- **Tailwind CSS** - Styling
+- **React Router** - Routing
+- **Vite** - Build Tool
+- **Shadcn/ui** - UI Components
+
+## 📝 Catatan Pengembangan
+
+- Semua komponen menggunakan design system dari `index.css` dan `tailwind.config.ts`
+- Images di-import sebagai ES6 modules untuk optimal bundling
+- Form kontak menggunakan validasi HTML5 (placeholder - belum terintegrasi backend)
+- Responsive design dengan breakpoint: mobile (< 768px), tablet (768px - 1024px), desktop (> 1024px)
+
+## 📞 Support
+
+Untuk pertanyaan atau bantuan:
+- Email: info@unismuh.ac.id
+- WhatsApp: +62 812-3456-7890
+- Website: https://unismuh.ac.id
+
+---
+
+© 2025 Universitas Muhammadiyah Makassar. All rights reserved.

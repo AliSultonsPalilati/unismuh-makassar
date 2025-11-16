@@ -1,0 +1,69 @@
+[
+  {
+    "id": "fkip",
+    "nama": "Fakultas Keguruan dan Ilmu Pendidikan",
+    "deskripsi": "Mencetak pendidik profesional yang berakhlak mulia dan berdaya saing tinggi.",
+    "akreditasi": "B",
+    "prodi": [
+      "Pendidikan Bahasa Indonesia",
+      "Pendidikan Bahasa Inggris",
+      "Pendidikan Matematika",
+      "Pendidikan Guru Sekolah Dasar (PGSD)"
+    ]
+  },
+  {
+    "id": "teknik",
+    "nama": "Fakultas Teknik",
+    "deskripsi": "Menghasilkan lulusan teknik yang inovatif dan siap menghadapi tantangan industri modern.",
+    "akreditasi": "B",
+    "prodi": [
+      "Teknik Sipil",
+      "Teknik Arsitektur",
+      "Teknik Mesin",
+      "Teknik Elektro"
+    ]
+  },
+  {
+    "id": "ekonomi",
+    "nama": "Fakultas Ekonomi dan Bisnis",
+    "deskripsi": "Membentuk wirausahawan dan profesional bisnis yang berintegritas tinggi.",
+    "akreditasi": "A",
+    "prodi": [
+      "Manajemen",
+      "Akuntansi",
+      "Ekonomi Pembangunan"
+    ]
+  },
+  {
+    "id": "kesehatan",
+    "nama": "Fakultas Ilmu Kesehatan",
+    "deskripsi": "Menghasilkan tenaga kesehatan profesional yang berkomitmen pada pelayanan masyarakat.",
+    "akreditasi": "B",
+    "prodi": [
+      "Keperawatan",
+      "Kesehatan Masyarakat",
+      "Farmasi",
+      "Kebidanan"
+    ]
+  },
+  {
+    "id": "pertanian",
+    "nama": "Fakultas Pertanian",
+    "deskripsi": "Mengembangkan ilmu pertanian modern untuk ketahanan pangan bangsa.",
+    "akreditasi": "B",
+    "prodi": [
+      "Agroteknologi",
+      "Agribisnis",
+      "Peternakan"
+    ]
+  },
+  {
+    "id": "hukum",
+    "nama": "Fakultas Hukum",
+    "deskripsi": "Mencetak sarjana hukum yang berintegritas dan berwawasan keislaman.",
+    "akreditasi": "B",
+    "prodi": [
+      "Ilmu Hukum"
+    ]
+  }
+]
